@@ -10,22 +10,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
 <style>
-/* Layout: navy hero framed by layered paper-cut waves with sparkles, sticky axis chips, one color-coded section per eje, navy commitments band. Single committed blue look with candy accents. */
+/* Layout: navy hero framed by layered paper-cut waves with sparkles, sticky axis chips, one color-coded section per eje, navy commitments band. Single committed aquamarine look with candy accents. */
 :root {
-  --navy: #2C4F86;
-  --navy-deep: #203D6B;
-  --blue: #3F78D6;
-  --sky: #7FAEEA;
-  --mist: #B9D5F4;
-  --ice: #EAF2FC;
+  --navy: #0E5E5C;
+  --navy-deep: #0A4644;
+  --blue: #128E84;
+  --sky: #5FD4C4;
+  --mist: #A9EBE0;
+  --ice: #E6F8F4;
   --paper: #FFFFFF;
-  --ink: #1B2E4D;
-  --ink-soft: #4C5F7E;
-  --line: #D2E2F6;
+  --ink: #133B3A;
+  --ink-soft: #46655F;
+  --line: #C7EAE2;
   --pink: #FF7AB8;
   --orange: #FF9548;
   --yellow: #FFD24D;
-  --mint: #4FD1B5;
+  --mint: #6CC4FF;
   --lilac: #B49BFF;
   --display: "League Spartan", "Montserrat", system-ui, sans-serif;
   --body: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -91,7 +91,7 @@ a { color: inherit; }
   color: var(--navy-deep); background: var(--yellow); padding: 5px 10px; border-radius: 6px;
   transform: rotate(-1.5deg);
 }
-.kicker { font-style: italic; font-size: clamp(1rem, 3.4vw, 1.3rem); color: #DCE9FA; margin: 0; }
+.kicker { font-style: italic; font-size: clamp(1rem, 3.4vw, 1.3rem); color: #D9F5EF; margin: 0; }
 .kicker b { font-weight: 600; }
 .title-wrap { position: relative; }
 h1 {
@@ -100,7 +100,7 @@ h1 {
   margin: 2px 0 0; text-wrap: balance;
 }
 h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
-.lede { margin: 4px 0 0; font-size: 1rem; color: #DCE9FA; max-width: 46ch; }
+.lede { margin: 4px 0 0; font-size: 1rem; color: #D9F5EF; max-width: 46ch; }
 .rule { height: 3px; border: 0; margin: 10px 0 0; width: 100%; border-radius: 3px;
   background: linear-gradient(90deg, var(--pink), var(--orange), var(--yellow), var(--mint), var(--lilac)); }
 .hero-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; }
@@ -123,7 +123,7 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
 /* ---------- AXIS NAV ---------- */
 .ejenav {
   position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
-  background: rgba(234, 242, 252, .94);
+  background: rgba(230, 248, 244, .94);
   backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -211,7 +211,7 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
 .card p { margin: 0; color: var(--ink-soft); font-size: .93rem; }
 .card.wide { background: var(--navy); border-color: var(--navy); }
 .card.wide h3 { color: var(--paper); }
-.card.wide p { color: #D3E2F6; }
+.card.wide p { color: #CDEFE8; }
 .card.wide .spark { right: 18px; top: 16px; color: var(--c); width: 24px; height: 24px; }
 .card.wide .spark.sm { right: 46px; top: 36px; width: 12px; height: 12px; color: var(--paper); animation-delay: .9s; }
 
@@ -224,12 +224,12 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
   font-size: clamp(1.7rem, 5.5vw, 2.6rem); line-height: 1; margin: 0 0 8px; text-wrap: balance;
 }
 .band h2 .pop { color: var(--yellow); }
-.band .intro { margin: 0; color: #D3E2F6; max-width: 60ch; }
+.band .intro { margin: 0; color: #CDEFE8; max-width: 60ch; }
 .commit { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; grid-template-columns: 1fr; }
 @media (min-width: 700px) { .commit { grid-template-columns: repeat(2, 1fr); } .commit li:last-child { grid-column: span 2; } }
 @media (min-width: 980px) { .commit { grid-template-columns: repeat(5, 1fr); } .commit li:last-child { grid-column: auto; } }
 .commit li {
-  background: rgba(255,255,255,.07); border: 1px solid rgba(185,213,244,.28); border-radius: 12px;
+  background: rgba(255,255,255,.07); border: 1px solid rgba(169,235,224,.28); border-radius: 12px;
   padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0;
 }
 .commit li:nth-child(1) { --c: var(--pink); }
@@ -238,7 +238,7 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
 .commit li:nth-child(4) { --c: var(--mint); }
 .commit li:nth-child(5) { --c: var(--lilac); }
 .commit b { font-family: var(--display); font-size: 1.05rem; font-weight: 700; color: var(--c); }
-.commit span { font-size: .85rem; color: #D3E2F6; }
+.commit span { font-size: .85rem; color: #CDEFE8; }
 .commit svg { width: 22px; height: 22px; color: var(--c); margin-bottom: 2px; }
 
 .route { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 0; grid-template-columns: 1fr; }
@@ -250,10 +250,10 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
   content: ""; position: absolute; left: 4px; top: 4px; width: 16px; height: 16px; border-radius: 50%;
   background: var(--c); box-shadow: 0 0 0 4px rgba(255,255,255,.12);
 }
-.route li::after { content: ""; position: absolute; left: 11px; top: 24px; bottom: 0; width: 2px; background: rgba(185,213,244,.35); }
+.route li::after { content: ""; position: absolute; left: 11px; top: 24px; bottom: 0; width: 2px; background: rgba(169,235,224,.35); }
 .route li:last-child::after { display: none; }
 .route b { display: block; font-family: var(--display); font-size: 1.1rem; color: var(--c); }
-.route span { color: #D3E2F6; font-size: .9rem; }
+.route span { color: #CDEFE8; font-size: .9rem; }
 @media (min-width: 800px) {
   .route { grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .route li { padding: 34px 0 0 0; }
@@ -279,10 +279,10 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
   <defs>
     <symbol id="star" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12C16.8 12.9 12.9 16.8 12 24C11.1 16.8 7.2 12.9 0 12C7.2 11.1 11.1 7.2 12 0Z"/></symbol>
     <filter id="shUp" x="-10%" y="-40%" width="120%" height="160%">
-      <feDropShadow dx="0" dy="-3" stdDeviation="4" flood-color="#0E2448" flood-opacity=".32"/>
+      <feDropShadow dx="0" dy="-3" stdDeviation="4" flood-color="#052F2D" flood-opacity=".32"/>
     </filter>
     <filter id="shSide" x="-20%" y="-5%" width="160%" height="110%">
-      <feDropShadow dx="4" dy="0" stdDeviation="4" flood-color="#0E2448" flood-opacity=".32"/>
+      <feDropShadow dx="4" dy="0" stdDeviation="4" flood-color="#052F2D" flood-opacity=".32"/>
     </filter>
   </defs>
 </svg>
@@ -290,18 +290,18 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
 <header class="hero">
   <svg class="side left" viewBox="0 0 200 600" preserveAspectRatio="none" aria-hidden="true">
     <g filter="url(#shSide)">
-      <path fill="#3F78D6" d="M0,0 H150 C110,90 175,170 125,260 C80,340 160,420 110,500 C80,550 120,580 100,600 H0Z"/>
-      <path fill="#7FAEEA" d="M0,0 H110 C80,90 135,170 95,260 C55,340 125,420 80,500 C55,550 85,580 70,600 H0Z"/>
-      <path fill="#B9D5F4" d="M0,0 H72 C50,90 95,170 62,260 C30,340 85,420 50,500 C32,550 52,580 42,600 H0Z"/>
-      <path fill="#EAF2FC" d="M0,0 H38 C25,90 55,170 32,260 C12,340 45,420 24,500 C14,550 26,580 20,600 H0Z"/>
+      <path fill="#17A398" d="M0,0 H150 C110,90 175,170 125,260 C80,340 160,420 110,500 C80,550 120,580 100,600 H0Z"/>
+      <path fill="#5FD4C4" d="M0,0 H110 C80,90 135,170 95,260 C55,340 125,420 80,500 C55,550 85,580 70,600 H0Z"/>
+      <path fill="#A9EBE0" d="M0,0 H72 C50,90 95,170 62,260 C30,340 85,420 50,500 C32,550 52,580 42,600 H0Z"/>
+      <path fill="#E6F8F4" d="M0,0 H38 C25,90 55,170 32,260 C12,340 45,420 24,500 C14,550 26,580 20,600 H0Z"/>
     </g>
   </svg>
   <svg class="side right" viewBox="0 0 200 600" preserveAspectRatio="none" aria-hidden="true">
     <g filter="url(#shSide)">
-      <path fill="#3F78D6" d="M0,0 H120 C150,80 90,160 135,250 C175,330 100,410 140,490 C165,545 120,580 130,600 H0Z"/>
-      <path fill="#7FAEEA" d="M0,0 H84 C108,80 62,160 96,250 C128,330 70,410 100,490 C118,545 86,580 92,600 H0Z"/>
-      <path fill="#B9D5F4" d="M0,0 H52 C70,80 38,160 60,250 C82,330 44,410 62,490 C74,545 54,580 58,600 H0Z"/>
-      <path fill="#EAF2FC" d="M0,0 H24 C34,80 16,160 28,250 C40,330 20,410 30,490 C36,545 26,580 28,600 H0Z"/>
+      <path fill="#17A398" d="M0,0 H120 C150,80 90,160 135,250 C175,330 100,410 140,490 C165,545 120,580 130,600 H0Z"/>
+      <path fill="#5FD4C4" d="M0,0 H84 C108,80 62,160 96,250 C128,330 70,410 100,490 C118,545 86,580 92,600 H0Z"/>
+      <path fill="#A9EBE0" d="M0,0 H52 C70,80 38,160 60,250 C82,330 44,410 62,490 C74,545 54,580 58,600 H0Z"/>
+      <path fill="#E6F8F4" d="M0,0 H24 C34,80 16,160 28,250 C40,330 20,410 30,490 C36,545 26,580 28,600 H0Z"/>
     </g>
   </svg>
 
@@ -330,10 +330,10 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
 
   <svg class="bottom-wave" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
     <g filter="url(#shUp)">
-      <path fill="#3F78D6" d="M0,40 C180,90 320,10 520,45 C720,80 860,20 1060,50 C1240,78 1340,30 1440,45 L1440,140 L0,140 Z"/>
-      <path fill="#7FAEEA" d="M0,70 C200,110 360,40 560,72 C760,104 900,50 1100,78 C1260,100 1360,62 1440,74 L1440,140 L0,140 Z"/>
-      <path fill="#B9D5F4" d="M0,98 C220,128 380,78 600,100 C800,120 960,84 1160,104 C1300,118 1380,94 1440,100 L1440,140 L0,140 Z"/>
-      <path fill="#EAF2FC" d="M0,122 C240,140 420,108 640,124 C840,138 1000,112 1200,126 C1320,134 1400,120 1440,124 L1440,140 L0,140 Z"/>
+      <path fill="#17A398" d="M0,40 C180,90 320,10 520,45 C720,80 860,20 1060,50 C1240,78 1340,30 1440,45 L1440,140 L0,140 Z"/>
+      <path fill="#5FD4C4" d="M0,70 C200,110 360,40 560,72 C760,104 900,50 1100,78 C1260,100 1360,62 1440,74 L1440,140 L0,140 Z"/>
+      <path fill="#A9EBE0" d="M0,98 C220,128 380,78 600,100 C800,120 960,84 1160,104 C1300,118 1380,94 1440,100 L1440,140 L0,140 Z"/>
+      <path fill="#E6F8F4" d="M0,122 C240,140 420,108 640,124 C840,138 1000,112 1200,126 C1320,134 1400,120 1440,124 L1440,140 L0,140 Z"/>
     </g>
   </svg>
 </header>
@@ -448,10 +448,10 @@ h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
   <section class="band" id="compromisos">
     <svg class="top-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
       <g filter="url(#shUp)">
-        <path fill="#B9D5F4" d="M0,30 C200,70 380,0 600,34 C820,68 980,10 1180,40 C1320,60 1400,30 1440,36 L1440,120 L0,120 Z"/>
-        <path fill="#7FAEEA" d="M0,56 C220,92 400,30 620,60 C840,90 1000,40 1200,66 C1330,82 1400,58 1440,62 L1440,120 L0,120 Z"/>
-        <path fill="#3F78D6" d="M0,82 C240,110 420,62 640,86 C860,108 1020,70 1220,90 C1340,100 1410,84 1440,88 L1440,120 L0,120 Z"/>
-        <path fill="#2C4F86" d="M0,104 C260,122 440,94 660,108 C880,120 1040,98 1240,110 C1350,116 1415,106 1440,108 L1440,120 L0,120 Z"/>
+        <path fill="#A9EBE0" d="M0,30 C200,70 380,0 600,34 C820,68 980,10 1180,40 C1320,60 1400,30 1440,36 L1440,120 L0,120 Z"/>
+        <path fill="#5FD4C4" d="M0,56 C220,92 400,30 620,60 C840,90 1000,40 1200,66 C1330,82 1400,58 1440,62 L1440,120 L0,120 Z"/>
+        <path fill="#17A398" d="M0,82 C240,110 420,62 640,86 C860,108 1020,70 1220,90 C1340,100 1410,84 1440,88 L1440,120 L0,120 Z"/>
+        <path fill="#0E5E5C" d="M0,104 C260,122 440,94 660,108 C880,120 1040,98 1240,110 C1350,116 1415,106 1440,108 L1440,120 L0,120 Z"/>
       </g>
     </svg>
     <div class="wrap band-inner">
