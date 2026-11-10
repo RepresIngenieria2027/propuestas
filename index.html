@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Las 22 propuestas de nuestro plan de gobierno para la Representación Estudiantil de la Facultad de Ingeniería, Uniandes.">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Propuestas Ingeniería Uniandes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+/* Layout: navy hero framed by layered paper-cut waves with sparkles, sticky axis chips, one color-coded section per eje, navy commitments band. Single committed blue look with candy accents. */
+:root {
+  --navy: #2C4F86;
+  --navy-deep: #203D6B;
+  --blue: #3F78D6;
+  --sky: #7FAEEA;
+  --mist: #B9D5F4;
+  --ice: #EAF2FC;
+  --paper: #FFFFFF;
+  --ink: #1B2E4D;
+  --ink-soft: #4C5F7E;
+  --line: #D2E2F6;
+  --pink: #FF7AB8;
+  --orange: #FF9548;
+  --yellow: #FFD24D;
+  --mint: #4FD1B5;
+  --lilac: #B49BFF;
+  --display: "League Spartan", "Montserrat", system-ui, sans-serif;
+  --body: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+body {
+  background: var(--ice);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.55;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--navy-deep);
+}
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; border-radius: 6px; }
+
+/* sparkles */
+.spark { position: absolute; width: 22px; height: 22px; pointer-events: none; animation: twinkle 3.2s ease-in-out infinite; }
+.spark use { fill: currentColor; }
+@keyframes twinkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  50% { transform: scale(.7) rotate(25deg); opacity: .65; }
+}
+.c-pink { color: var(--pink); } .c-orange { color: var(--orange); } .c-yellow { color: var(--yellow); }
+.c-mint { color: var(--mint); } .c-lilac { color: var(--lilac); } .c-white { color: var(--paper); }
+
+/* marker highlight */
+.hl {
+  background: linear-gradient(transparent 52%, var(--c, var(--yellow)) 52%, var(--c, var(--yellow)) 90%, transparent 90%);
+  padding: 0 .12em; -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  background: var(--navy);
+  color: var(--paper);
+  overflow: hidden;
+  padding-bottom: 96px;
+}
+.side { position: absolute; top: 0; height: 100%; width: clamp(30px, 11vw, 170px); pointer-events: none; }
+.side.left { left: 0; }
+.side.right { right: 0; transform: scaleX(-1); }
+.hero-inner {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+  padding-block: 56px 24px;
+  padding-left: max(clamp(46px, 13vw, 190px), env(safe-area-inset-left, 0px));
+  padding-right: max(clamp(46px, 13vw, 190px), env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 14px;
+}
+@media (min-width: 1100px) { .hero-inner { padding-left: 24px; padding-right: 24px; } }
+.eyebrow {
+  align-self: flex-start;
+  font-size: .7rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--navy-deep); background: var(--yellow); padding: 5px 10px; border-radius: 6px;
+  transform: rotate(-1.5deg);
+}
+.kicker { font-style: italic; font-size: clamp(1rem, 3.4vw, 1.3rem); color: #DCE9FA; margin: 0; }
+.kicker b { font-weight: 600; }
+.title-wrap { position: relative; }
+h1 {
+  font-family: var(--display); font-weight: 800; text-transform: uppercase;
+  font-size: clamp(2.5rem, 10vw, 5.2rem); line-height: .92; letter-spacing: .01em;
+  margin: 2px 0 0; text-wrap: balance;
+}
+h1 .pop { color: var(--yellow); text-shadow: 4px 4px 0 var(--pink); }
+.lede { margin: 4px 0 0; font-size: 1rem; color: #DCE9FA; max-width: 46ch; }
+.rule { height: 3px; border: 0; margin: 10px 0 0; width: 100%; border-radius: 3px;
+  background: linear-gradient(90deg, var(--pink), var(--orange), var(--yellow), var(--mint), var(--lilac)); }
+.hero-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; }
+.stats { display: flex; gap: 22px; }
+.stat b { display: block; font-family: var(--display); font-size: 2rem; line-height: 1; }
+.stat:nth-child(1) b { color: var(--yellow); }
+.stat:nth-child(2) b { color: var(--pink); }
+.stat span { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--mist); }
+.cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-style: italic; font-weight: 600; text-decoration: none;
+  background: var(--yellow); color: var(--navy-deep); padding: 10px 18px; border-radius: 999px;
+  box-shadow: 3px 3px 0 var(--pink);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cta:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--pink); }
+.cta svg { width: 14px; height: 14px; }
+.bottom-wave { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 110px; display: block; }
+
+/* ---------- AXIS NAV ---------- */
+.ejenav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: rgba(234, 242, 252, .94);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.ejenav-scroll { overflow-x: auto; scrollbar-width: none; }
+.ejenav-scroll::-webkit-scrollbar { display: none; }
+.ejenav ul {
+  list-style: none; margin: 0 auto; max-width: 1040px;
+  display: flex; gap: 8px; width: max-content; min-width: 100%;
+  padding-block: 10px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.ejenav a {
+  display: inline-flex; align-items: center; gap: 7px; white-space: nowrap;
+  text-decoration: none; font-size: .82rem; font-weight: 600; color: var(--navy);
+  background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px 5px 5px;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.ejenav a span {
+  display: inline-grid; place-items: center; min-width: 26px; height: 26px; border-radius: 999px;
+  font-family: var(--display); font-size: .78rem; color: var(--navy-deep); background: var(--c);
+}
+.ejenav a:hover, .ejenav a.on { background: var(--navy); color: var(--paper); border-color: var(--navy); }
+
+/* ---------- CONTENT ---------- */
+.wrap {
+  max-width: 1040px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.vision { position: relative; padding-block: 44px 8px; }
+.vision p {
+  font-family: var(--display); font-weight: 600; color: var(--navy);
+  font-size: clamp(1.35rem, 4vw, 1.9rem); line-height: 1.25; margin: 0; max-width: 30ch; text-wrap: balance;
+}
+.vision .spark { width: 28px; height: 28px; }
+
+.eje { position: relative; padding-block: 40px 8px; scroll-margin-top: 64px; }
+.eje-head { position: relative; display: grid; grid-template-columns: auto 1fr; align-items: end; gap: 4px 16px; margin-bottom: 20px; }
+.eje-num {
+  grid-row: span 2;
+  font-family: var(--display); font-weight: 800; font-size: clamp(3.4rem, 11vw, 5rem); line-height: .8;
+  color: var(--c); -webkit-text-stroke: 2px var(--navy); text-shadow: 4px 4px 0 var(--navy);
+  padding-right: 4px;
+}
+.eje-label {
+  justify-self: start;
+  font-size: .7rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--navy-deep); background: var(--c); padding: 3px 9px; border-radius: 6px;
+}
+.eje h2 {
+  font-family: var(--display); font-weight: 700; color: var(--navy);
+  font-size: clamp(1.4rem, 4.2vw, 2rem); line-height: 1.1; margin: 0; text-wrap: balance;
+}
+.eje-sub { grid-column: 1 / -1; margin: 6px 0 0; color: var(--ink-soft); }
+.eje-head .spark { right: 2%; top: -8px; color: var(--c); width: 26px; height: 26px; }
+.eje-head .spark.sm { right: calc(2% + 30px); top: 18px; width: 14px; height: 14px; animation-delay: 1.2s; }
+
+.grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
+@media (min-width: 640px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid.n3 > :first-child, .grid.n5 > :first-child { grid-column: span 2; }
+}
+@media (min-width: 960px) {
+  .grid.n3, .grid.n5, .grid.n6 { grid-template-columns: repeat(3, 1fr); }
+  .grid.n3 > :first-child { grid-column: auto; }
+}
+.card {
+  position: relative;
+  min-width: 0;
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px 20px;
+  display: flex; flex-direction: column; gap: 8px;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.card:hover { transform: translate(-2px, -2px); border-color: var(--navy); box-shadow: 5px 5px 0 var(--c); }
+.card .n {
+  align-self: flex-start;
+  font-family: var(--display); font-weight: 700; font-size: .82rem; letter-spacing: .04em; font-variant-numeric: tabular-nums;
+  color: var(--navy-deep); background: var(--c); padding: 3px 9px; border-radius: 999px;
+}
+.card h3 { font-family: var(--display); font-weight: 700; font-size: 1.22rem; line-height: 1.1; color: var(--navy); margin: 0; text-wrap: balance; }
+.card p { margin: 0; color: var(--ink-soft); font-size: .93rem; }
+.card.wide { background: var(--navy); border-color: var(--navy); }
+.card.wide h3 { color: var(--paper); }
+.card.wide p { color: #D3E2F6; }
+.card.wide .spark { right: 18px; top: 16px; color: var(--c); width: 24px; height: 24px; }
+.card.wide .spark.sm { right: 46px; top: 36px; width: 12px; height: 12px; color: var(--paper); animation-delay: .9s; }
+
+/* ---------- COMMITMENTS BAND ---------- */
+.band { position: relative; margin-top: 64px; background: var(--navy); color: var(--paper); }
+.top-wave { display: block; width: 100%; height: 80px; margin-bottom: -1px; background: var(--ice); }
+.band-inner { position: relative; padding-block: 24px 64px; display: grid; gap: 44px; }
+.band h2 {
+  font-family: var(--display); font-weight: 800; text-transform: uppercase;
+  font-size: clamp(1.7rem, 5.5vw, 2.6rem); line-height: 1; margin: 0 0 8px; text-wrap: balance;
+}
+.band h2 .pop { color: var(--yellow); }
+.band .intro { margin: 0; color: #D3E2F6; max-width: 60ch; }
+.commit { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; grid-template-columns: 1fr; }
+@media (min-width: 700px) { .commit { grid-template-columns: repeat(2, 1fr); } .commit li:last-child { grid-column: span 2; } }
+@media (min-width: 980px) { .commit { grid-template-columns: repeat(5, 1fr); } .commit li:last-child { grid-column: auto; } }
+.commit li {
+  background: rgba(255,255,255,.07); border: 1px solid rgba(185,213,244,.28); border-radius: 12px;
+  padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0;
+}
+.commit li:nth-child(1) { --c: var(--pink); }
+.commit li:nth-child(2) { --c: var(--orange); }
+.commit li:nth-child(3) { --c: var(--yellow); }
+.commit li:nth-child(4) { --c: var(--mint); }
+.commit li:nth-child(5) { --c: var(--lilac); }
+.commit b { font-family: var(--display); font-size: 1.05rem; font-weight: 700; color: var(--c); }
+.commit span { font-size: .85rem; color: #D3E2F6; }
+.commit svg { width: 22px; height: 22px; color: var(--c); margin-bottom: 2px; }
+
+.route { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 0; grid-template-columns: 1fr; }
+.route li { position: relative; padding: 0 0 22px 34px; min-width: 0; }
+.route li:nth-child(1) { --c: var(--pink); }
+.route li:nth-child(2) { --c: var(--orange); }
+.route li:nth-child(3) { --c: var(--yellow); }
+.route li::before {
+  content: ""; position: absolute; left: 4px; top: 4px; width: 16px; height: 16px; border-radius: 50%;
+  background: var(--c); box-shadow: 0 0 0 4px rgba(255,255,255,.12);
+}
+.route li::after { content: ""; position: absolute; left: 11px; top: 24px; bottom: 0; width: 2px; background: rgba(185,213,244,.35); }
+.route li:last-child::after { display: none; }
+.route b { display: block; font-family: var(--display); font-size: 1.1rem; color: var(--c); }
+.route span { color: #D3E2F6; font-size: .9rem; }
+@media (min-width: 800px) {
+  .route { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .route li { padding: 34px 0 0 0; }
+  .route li::before { left: 0; top: 0; }
+  .route li::after { left: 26px; right: -16px; top: 7px; bottom: auto; width: auto; height: 2px; }
+}
+
+.closing { position: relative; padding-block: 8px 0; }
+.closing p {
+  font-style: italic; font-weight: 500; font-size: clamp(1.1rem, 3.4vw, 1.45rem); line-height: 1.45;
+  margin: 0; max-width: 40ch; color: var(--paper); text-wrap: balance;
+}
+.closing p b { font-weight: 600; color: var(--yellow); }
+.closing small { display: block; margin-top: 14px; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mist); }
+.band .spark.b1 { right: 6%; top: 10px; width: 30px; height: 30px; }
+.band .spark.b2 { right: calc(6% + 40px); top: 46px; width: 14px; height: 14px; animation-delay: 1s; }
+.band .spark.b3 { right: 12%; bottom: 40px; width: 20px; height: 20px; animation-delay: 2s; }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12C16.8 12.9 12.9 16.8 12 24C11.1 16.8 7.2 12.9 0 12C7.2 11.1 11.1 7.2 12 0Z"/></symbol>
+    <filter id="shUp" x="-10%" y="-40%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="-3" stdDeviation="4" flood-color="#0E2448" flood-opacity=".32"/>
+    </filter>
+    <filter id="shSide" x="-20%" y="-5%" width="160%" height="110%">
+      <feDropShadow dx="4" dy="0" stdDeviation="4" flood-color="#0E2448" flood-opacity=".32"/>
+    </filter>
+  </defs>
+</svg>
+
+<header class="hero">
+  <svg class="side left" viewBox="0 0 200 600" preserveAspectRatio="none" aria-hidden="true">
+    <g filter="url(#shSide)">
+      <path fill="#3F78D6" d="M0,0 H150 C110,90 175,170 125,260 C80,340 160,420 110,500 C80,550 120,580 100,600 H0Z"/>
+      <path fill="#7FAEEA" d="M0,0 H110 C80,90 135,170 95,260 C55,340 125,420 80,500 C55,550 85,580 70,600 H0Z"/>
+      <path fill="#B9D5F4" d="M0,0 H72 C50,90 95,170 62,260 C30,340 85,420 50,500 C32,550 52,580 42,600 H0Z"/>
+      <path fill="#EAF2FC" d="M0,0 H38 C25,90 55,170 32,260 C12,340 45,420 24,500 C14,550 26,580 20,600 H0Z"/>
+    </g>
+  </svg>
+  <svg class="side right" viewBox="0 0 200 600" preserveAspectRatio="none" aria-hidden="true">
+    <g filter="url(#shSide)">
+      <path fill="#3F78D6" d="M0,0 H120 C150,80 90,160 135,250 C175,330 100,410 140,490 C165,545 120,580 130,600 H0Z"/>
+      <path fill="#7FAEEA" d="M0,0 H84 C108,80 62,160 96,250 C128,330 70,410 100,490 C118,545 86,580 92,600 H0Z"/>
+      <path fill="#B9D5F4" d="M0,0 H52 C70,80 38,160 60,250 C82,330 44,410 62,490 C74,545 54,580 58,600 H0Z"/>
+      <path fill="#EAF2FC" d="M0,0 H24 C34,80 16,160 28,250 C40,330 20,410 30,490 C36,545 26,580 28,600 H0Z"/>
+    </g>
+  </svg>
+
+  <svg class="spark c-yellow" style="right:16%;top:34px;width:30px;height:30px" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="spark c-pink" style="right:12%;top:78px;width:14px;height:14px;animation-delay:.8s" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="spark c-white" style="left:16%;top:40%;width:12px;height:12px;animation-delay:1.6s" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="spark c-orange" style="right:20%;top:56%;width:18px;height:18px;animation-delay:2.2s" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="spark c-mint" style="left:19%;top:64%;width:20px;height:20px;animation-delay:.4s" aria-hidden="true"><use href="#star"/></svg>
+
+  <div class="hero-inner">
+    <span class="eyebrow">Uniandes · Facultad de Ingeniería</span>
+    <p class="kicker">Una facultad más <b class="c-pink">conectada</b>, <b class="c-orange">participativa</b> y <b class="c-yellow">cercana</b></p>
+    <h1>Plan de <span class="pop">gobierno</span></h1>
+    <p class="lede">Candidatura a la Representación Estudiantil de la Facultad de Ingeniería.</p>
+    <hr class="rule">
+    <div class="hero-meta">
+      <div class="stats">
+        <div class="stat"><b>22</b><span>propuestas</span></div>
+        <div class="stat"><b>5</b><span>ejes</span></div>
+      </div>
+      <a class="cta" href="#eje-1">Ver propuestas
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 2l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <svg class="bottom-wave" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+    <g filter="url(#shUp)">
+      <path fill="#3F78D6" d="M0,40 C180,90 320,10 520,45 C720,80 860,20 1060,50 C1240,78 1340,30 1440,45 L1440,140 L0,140 Z"/>
+      <path fill="#7FAEEA" d="M0,70 C200,110 360,40 560,72 C760,104 900,50 1100,78 C1260,100 1360,62 1440,74 L1440,140 L0,140 Z"/>
+      <path fill="#B9D5F4" d="M0,98 C220,128 380,78 600,100 C800,120 960,84 1160,104 C1300,118 1380,94 1440,100 L1440,140 L0,140 Z"/>
+      <path fill="#EAF2FC" d="M0,122 C240,140 420,108 640,124 C840,138 1000,112 1200,126 C1320,134 1400,120 1440,124 L1440,140 L0,140 Z"/>
+    </g>
+  </svg>
+</header>
+
+<nav class="ejenav" aria-label="Ejes del plan">
+  <div class="ejenav-scroll">
+    <ul>
+      <li><a href="#eje-1" style="--c:var(--pink)"><span>01</span> Representación</a></li>
+      <li><a href="#eje-2" style="--c:var(--orange)"><span>02</span> Habilidades</a></li>
+      <li><a href="#eje-3" style="--c:var(--yellow)"><span>03</span> Oportunidades</a></li>
+      <li><a href="#eje-4" style="--c:var(--mint)"><span>04</span> Innovación</a></li>
+      <li><a href="#eje-5" style="--c:var(--lilac)"><span>05</span> Comunidad</a></li>
+      <li><a href="#compromisos" style="--c:var(--sky)"><span>✓</span> Compromisos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="wrap vision">
+    <svg class="spark c-pink" style="right:6%;top:30px" aria-hidden="true"><use href="#star"/></svg>
+    <svg class="spark c-yellow" style="right:calc(6% + 36px);top:62px;width:14px;height:14px;animation-delay:1.4s" aria-hidden="true"><use href="#star"/></svg>
+    <p>Representar no es solo escuchar: es <span class="hl" style="--c:#FFC2DD">articular personas</span>, convertir propuestas en <span class="hl" style="--c:#FFE08A">proyectos</span> y contar cómo avanzan.</p>
+  </section>
+
+  <section class="wrap eje" id="eje-1" style="--c:var(--pink)">
+    <div class="eje-head">
+      <span class="eje-num">01</span>
+      <span class="eje-label">Eje 01</span>
+      <h2>Representación cercana, articulada y transparente</h2>
+      <p class="eje-sub">Una representación que coordina, escucha y rinde cuentas.</p>
+      <svg class="spark" aria-hidden="true"><use href="#star"/></svg>
+      <svg class="spark sm" aria-hidden="true"><use href="#star"/></svg>
+    </div>
+    <div class="grid n4">
+      <article class="card"><span class="n">01</span><h3>Mesa de Ingeniería</h3><p>Reuniones periódicas con los representantes de todos los departamentos, con responsables, compromisos y fechas verificables.</p></article>
+      <article class="card"><span class="n">02</span><h3>Representantes cerca de ti</h3><p>Espacios de escucha por departamento, seguimiento a cada solicitud y balances públicos de lo que se logra.</p></article>
+      <article class="card"><span class="n">03</span><h3>Bienvenida con sentido</h3><p>Kits para primíparos con contactos y recursos clave, y encuentros de integración entre semestres.</p></article>
+      <article class="card"><span class="n">04</span><h3>Ingeniería al día</h3><p>Un calendario y canales coordinados para que ningún taller ni convocatoria pase desapercibido.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap eje" id="eje-2" style="--c:var(--orange)">
+    <div class="eje-head">
+      <span class="eje-num">02</span>
+      <span class="eje-label">Eje 02</span>
+      <h2>Herramientas y habilidades para la vida académica y profesional</h2>
+      <p class="eje-sub">Formación práctica que sirve en clases, proyectos y prácticas.</p>
+      <svg class="spark" aria-hidden="true"><use href="#star"/></svg>
+      <svg class="spark sm" aria-hidden="true"><use href="#star"/></svg>
+    </div>
+    <div class="grid n5">
+      <article class="card wide"><span class="n">05</span><h3>Excel para Ingeniería</h3><p>Talleres por niveles, desde funciones y organización de datos hasta análisis, visualización y automatización, con casos que puedes reutilizar en tus cursos y prácticas.</p><svg class="spark" aria-hidden="true"><use href="#star"/></svg><svg class="spark sm" aria-hidden="true"><use href="#star"/></svg></article>
+      <article class="card"><span class="n">06</span><h3>IA en acción</h3><p>Talleres de Claude, Codex y Lovable para pasar de una idea a un prototipo, con uso responsable.</p></article>
+      <article class="card"><span class="n">07</span><h3>Escritura técnica sin enredos</h3><p>LaTeX, Overleaf, ecuaciones, figuras y referencias IEEE o APA con plantillas reutilizables.</p></article>
+      <article class="card"><span class="n">08</span><h3>Habilidades que abren puertas</h3><p>Oratoria, liderazgo, simulacros de entrevistas y dinámicas tipo Shark Tank.</p></article>
+      <article class="card"><span class="n">09</span><h3>Finanzas y emprendimiento desde cero</h3><p>Presupuestos, costos e ideas de negocio en Excel, y espacios preparatorios para cursos como Análisis de Decisiones.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap eje" id="eje-3" style="--c:var(--yellow)">
+    <div class="eje-head">
+      <span class="eje-num">03</span>
+      <span class="eje-label">Eje 03</span>
+      <h2>Oportunidades y conexiones más allá del salón</h2>
+      <p class="eje-sub">Puentes con egresados, empresas y convocatorias.</p>
+      <svg class="spark" aria-hidden="true"><use href="#star"/></svg>
+      <svg class="spark sm" aria-hidden="true"><use href="#star"/></svg>
+    </div>
+    <div class="grid n4">
+      <article class="card"><span class="n">10</span><h3>Red de egresados</h3><p>Conversaciones sobre trayectorias laborales, posgrados, emprendimiento y experiencias internacionales.</p></article>
+      <article class="card"><span class="n">11</span><h3>Oportunidades a un clic</h3><p>Prácticas, pasantías, becas y convocatorias organizadas por programa, con fechas y enlaces oficiales, junto al CTP.</p></article>
+      <article class="card"><span class="n">12</span><h3>Ingeniería fuera del aula</h3><p>Visitas a empresas, laboratorios y centros tecnológicos, presenciales o virtuales.</p></article>
+      <article class="card"><span class="n">13</span><h3>Ingeniería conversa</h3><p>Ciclo de charlas con profesores, investigadores, egresados y emprendedores invitados.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap eje" id="eje-4" style="--c:var(--mint)">
+    <div class="eje-head">
+      <span class="eje-num">04</span>
+      <span class="eje-label">Eje 04</span>
+      <h2>Innovación, investigación y aprendizaje colaborativo</h2>
+      <p class="eje-sub">Retos y espacios para crear entre carreras.</p>
+      <svg class="spark" aria-hidden="true"><use href="#star"/></svg>
+      <svg class="spark sm" aria-hidden="true"><use href="#star"/></svg>
+    </div>
+    <div class="grid n3">
+      <article class="card wide"><span class="n">14</span><h3>Reto Ingeniería</h3><p>Hackatones y desafíos reales con empresas y docentes, en equipos que mezclan distintas ingenierías y con mentorías.</p><svg class="spark" aria-hidden="true"><use href="#star"/></svg><svg class="spark sm" aria-hidden="true"><use href="#star"/></svg></article>
+      <article class="card"><span class="n">15</span><h3>Descubre Ingeniería</h3><p>Una feria en el S1 para conocer semilleros, grupos estudiantiles y cómo unirse.</p></article>
+      <article class="card"><span class="n">16</span><h3>Apuntes que conectan</h3><p>Un repositorio colaborativo de apuntes y guías por curso, con reglas claras de calidad y autoría.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap eje" id="eje-5" style="--c:var(--lilac)">
+    <div class="eje-head">
+      <span class="eje-num">05</span>
+      <span class="eje-label">Eje 05</span>
+      <h2>Comunidad, bienestar y sentido de pertenencia</h2>
+      <p class="eje-sub">Encuentros, bienestar y orgullo de ser Ingeniería.</p>
+      <svg class="spark" aria-hidden="true"><use href="#star"/></svg>
+      <svg class="spark sm" aria-hidden="true"><use href="#star"/></svg>
+    </div>
+    <div class="grid n6">
+      <article class="card"><span class="n">17</span><h3>Ingeniería se encuentra</h3><p>Integraciones, almuerzos abiertos con directivos y el regreso de la lunada.</p></article>
+      <article class="card"><span class="n">18</span><h3>Ingeniería en movimiento</h3><p>Torneos deportivos, de videojuegos y de ajedrez con equipos mixtos entre carreras.</p></article>
+      <article class="card"><span class="n">19</span><h3>Día del Ingeniero</h3><p>Trivias, juegos de mesa, refrigerios y reconocimientos para celebrar lo que nos une.</p></article>
+      <article class="card"><span class="n">20</span><h3>Pausa Ingeniería</h3><p>Pausas activas, arte y juegos, sobre todo en las semanas de más carga.</p></article>
+      <article class="card"><span class="n">21</span><h3>Somos Ingeniería</h3><p>Pines, stickers y sacos de toda la Facultad, con excedentes para proyectos estudiantiles.</p></article>
+      <article class="card"><span class="n">22</span><h3>Ingeniería que deja huella</h3><p>Jornadas de donación y voluntariado junto a iniciativas que ya existen en la Universidad.</p></article>
+    </div>
+  </section>
+
+  <section class="band" id="compromisos">
+    <svg class="top-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <g filter="url(#shUp)">
+        <path fill="#B9D5F4" d="M0,30 C200,70 380,0 600,34 C820,68 980,10 1180,40 C1320,60 1400,30 1440,36 L1440,120 L0,120 Z"/>
+        <path fill="#7FAEEA" d="M0,56 C220,92 400,30 620,60 C840,90 1000,40 1200,66 C1330,82 1400,58 1440,62 L1440,120 L0,120 Z"/>
+        <path fill="#3F78D6" d="M0,82 C240,110 420,62 640,86 C860,108 1020,70 1220,90 C1340,100 1410,84 1440,88 L1440,120 L0,120 Z"/>
+        <path fill="#2C4F86" d="M0,104 C260,122 440,94 660,108 C880,120 1040,98 1240,110 C1350,116 1415,106 1440,108 L1440,120 L0,120 Z"/>
+      </g>
+    </svg>
+    <div class="wrap band-inner">
+      <svg class="spark b1 c-yellow" aria-hidden="true"><use href="#star"/></svg>
+      <svg class="spark b2 c-pink" aria-hidden="true"><use href="#star"/></svg>
+      <svg class="spark b3 c-mint" aria-hidden="true"><use href="#star"/></svg>
+      <div>
+        <h2>Cómo lo vamos a <span class="pop">cumplir</span></h2>
+        <p class="intro">Algunas iniciativas dependen de profesores, empresas, espacios y recursos. Por eso nos comprometemos a gestionar con orden y a contar siempre en qué va cada una.</p>
+        <ul class="commit">
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Priorizar</b><span>Diagnóstico con cada departamento.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Planear</b><span>Cronograma con aliados y responsables.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Ser transparentes</b><span>Separar lo confirmado de lo que está en gestión.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Medir y ajustar</b><span>Participación, satisfacción y avances.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Rendir cuentas</b><span>Balances periódicos de lo hecho y lo pendiente.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Ruta</h2>
+        <ol class="route">
+          <li><b>Inicio del periodo</b><span>Reunión con representantes de departamento para definir prioridades, responsables y calendario.</span></li>
+          <li><b>Durante el semestre</b><span>Talleres, encuentros y actividades a medida que haya condiciones para hacerlas bien.</span></li>
+          <li><b>Seguimiento y cierre</b><span>Encuesta de retroalimentación, resultados publicados y recomendaciones para darles continuidad.</span></li>
+        </ol>
+      </div>
+
+      <div class="closing">
+        <p>Representar a <b>toda Ingeniería</b>: escuchar a cada departamento, conectar a sus estudiantes y darle continuidad a las buenas ideas.</p>
+        <small>Representación Estudiantil · Facultad de Ingeniería · Uniandes</small>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.ejenav a'));
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (l) { l.classList.remove('on'); });
+      var a = map[e.target.id];
+      if (a) {
+        a.classList.add('on');
+        var sc = a.closest('.ejenav-scroll');
+        if (sc) sc.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' });
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('.eje, #compromisos').forEach(function (s) { io.observe(s); });
+})();
+</script>
+</body>
+</html>
